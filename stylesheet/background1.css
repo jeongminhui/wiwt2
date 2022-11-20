@@ -1,0 +1,77 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    -45deg,
+    #ee765299,
+    #e73c7ebc,
+    #23a5d56e,
+    #23d5ab98
+  );
+  /* background: linear-gradient(-45deg, #41b1da); */
+  /* background: #41b1da; */
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  /* cursor: none; */
+  backdrop-filter: blur(10px);
+  /* background-blend-mode: ; */
+}
+main {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  justify-content: space-between;
+  box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5),
+    inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+main .lookbook {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 0px 50px 50px 0px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+
+/* 푸터. 하단 인덱스 */
+footer {
+  display: flex;
+  justify-content: right;
+  margin-right: 11vw;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 90px;
+  border-radius: 0 0 15px 15px;
+  background: rgb(177, 102, 248);
+  color: rgb(177, 102, 248);
+  border: 1px solid azure;
+  margin-left: 5px;
+}
+footer div:hover {
+  color: white;
+  justify-content: center;
+  height: 40px;
+  background: rgb(255, 188, 81);
+}
